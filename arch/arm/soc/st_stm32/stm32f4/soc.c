@@ -66,3 +66,10 @@ static int st_stm32f4_init(struct device *arg)
 }
 
 SYS_INIT(st_stm32f4_init, PRE_KERNEL_1, 0);
+
+/* Functions needed by the STM32FCube HAL */
+
+void HAL_Delay(__IO uint32_t Delay)
+{
+	k_sleep(Delay);
+}

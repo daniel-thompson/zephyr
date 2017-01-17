@@ -127,11 +127,15 @@ static const stm32_pin_func_t pin_pa10_funcs[] = {
 static const stm32_pin_func_t pin_pa11_funcs[] = {
 	PINMUX_UART(PA11, UART6, TX)
 	PINMUX_UART(PA11, UART4, RX)
+	PAD(STM32F4_PINMUX_FUNC_PA11_OTG_FS_DM,
+			STM32F4X_PIN_CONFIG_AF_PUSH_PULL),
 };
 
 static const stm32_pin_func_t pin_pa12_funcs[] = {
 	PINMUX_UART(PA12, UART6, RX)
 	PINMUX_UART(PA12, UART4, TX)
+	PAD(STM32F4_PINMUX_FUNC_PA12_OTG_FS_DP,
+			STM32F4X_PIN_CONFIG_AF_PUSH_PULL),
 };
 
 static const stm32_pin_func_t pin_pa15_funcs[] = {
